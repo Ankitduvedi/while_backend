@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 mongoose.connect("mongodb+srv://ankitduvedi03:ankitduvedi03@cluster0.y58dpwq.mongodb.net/notesdb").then(function(){
     app.get("/",function(req,res){
-        const response = {message: "API works this is a APP from WHILE"}
+        const response = {message: "API works this is an APP from WHILE "}
         res.json(response); 
     });
     // notes route
